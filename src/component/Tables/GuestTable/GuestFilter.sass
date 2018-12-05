@@ -1,0 +1,36 @@
+@import "../../../vars.scss"
+.filter
+    width: 370px
+    margin-right: 40px
+    margin-bottom: 35px
+    .header
+        background-color: $highlight
+        color: white
+        font-size: 0.8em
+        height: 40px
+        padding: 0.45rem 1.25rem
+        border: $border-color 1px solid
+        text-transform: uppercase
+        font-weight: 700
+        display: flex
+        flex-direction: row
+        align-items: center
+    .list-group
+        .list-group-item
+            height: 70px
+            font-size: 1.4em
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: space-between
+            background-color: $bg-light
+            color: $text-primary-color
+            &.selected
+                background-color: white
+                font-weight: 700
+            &:first-child
+                border-top-left-radius: 0px
+                border-top-right-radius: 0px
+            &:last-child
+                border-bottom-left-radius: 0px
+                border-bottom-right-radius: 0px

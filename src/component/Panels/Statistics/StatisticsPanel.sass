@@ -1,0 +1,48 @@
+@import "../../../vars.scss"
+.stat-panel
+    .stat-title
+        font-size: 2rem
+        color: $highlight
+    .stat-body
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        .stat-box
+            border: 1px solid $border-color
+            border-radius: 2px
+            width: 540px
+            height: 270px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            .event-name 
+                color: $text-primary-color
+                font-size: 1.5em
+                flex: 2
+                display: flex
+                justify-content: center
+                align-items: center
+            .event-stat
+                flex: 7
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                align-items: center
+                width: 100%
+                .event-stat-invited-attended
+                    flex: 2
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .number
+                        color: $highlight
+                        font-size: 6rem
+                .event-stat-arrow
+                    flex: 1
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: $border-color
+                    font-size: 3rem
