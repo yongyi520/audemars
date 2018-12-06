@@ -8,7 +8,7 @@ import { GuestFilter } from '../../../component/Tables/GuestTable/GuestFilter';
 import { GuestTable } from '../../../component/Tables/GuestTable/GuestTable';
 
 import { Tag } from '../../../component/Tag/Tag'
-import { GuestFooter } from '../../../component/footer/GuestFooter';
+import { GuestFooter } from '../../../component/Footer/GuestFooter';
 
 export class GuestsTabPane extends Component {
     render(){

@@ -1,46 +1,54 @@
 import React, { Component } from 'react';
 import './ValidationTable.sass';
-import { Table } from 'reactstrap';
+import { Table, Input } from 'reactstrap';
 
-import { ValidationRow } from './ValidationRow'
+import { ValidationMainRow } from './ValidationMainRow'
 import { NormalButton } from '../../Buttons/NormalButton';
+import { ValidationSubRow } from './ValidationSubRow';
 
 export class ValidationTable extends Component {
     render(){
+        const validationData = [
+            {
+                field: 'First name',
+                old: 'John',
+                new: 'John'
+            },
+            {
+                field: 'Last name',
+                old: 'Malkovitch',
+                new: 'Malkovikch'
+            },
+            {
+                field: 'Opt-in',
+                old: false,
+                new: true
+            },
+            {
+                field: 'Country',
+                old: 'France',
+                new: 'Switzerland'
+            }
+        ]
         return (
-            <div id="ValidationTable">
-                <div className="table-header">
-                    <div className="column-before">BEFORE</div>
-                    <div className="column-after">AFTER</div>
-                    <div className="column-actions">ACTIONS</div>
-                </div>
-                <div className="table-body">
-                    <div className="guest-validation">
-                        <div className="main-row">
-                            <div  className="row-left">
-
-                            </div>
-
-                            <div className="row-right column-actions flex-row-center">
-                                <NormalButton label="Refuse all"/>
-                                <NormalButton label="Validate all"/>
-                            </div>
-
-                        </div>
-                        <div className="sub-row">
-                            <div className="row-left">
-                            
-                            </div>
-                            <div className="row-right column-actions flex-row-center">
-                                <NormalButton label="Refuse"/>
-                                <NormalButton label="Validate"/>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+            <Table id="ValidationTable">
+                <tr className="table-header flex-row-center">
+                    <th className="column-before flex-row-center">BEFORE</th>
+                    <th className="column-after flex-row-center">AFTER</th>
+                    <th className="column-actions flex-row-center">ACTIONS</th>
+                </tr>
+                <tbody className="table-body">
+                    <ValidationMainRow/>
+                    { validationData.map( data => (
+                        <ValidationSubRow data={data}/>
+                    ))}
+                    <ValidationMainRow/>
+                    { validationData.map( data => (
+                        <ValidationSubRow data={data}/>
+                    ))}
+                </tbody>
                 
-            </div>
+            </Table>
         )
     }
 }

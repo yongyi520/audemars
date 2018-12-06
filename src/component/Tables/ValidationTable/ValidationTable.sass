@@ -1,5 +1,6 @@
 @import "../../../vars.scss"
 #ValidationTable
+    margin-bottom: 30px
     .column-before
         width: 745px
     .column-after
@@ -11,15 +12,15 @@
         color: white
         font-size: 0.8em
         height: 40px
+        font-weight: 700
         th 
+            height: 100%
             padding: 0.45rem
-            // border: $border-color 1px solid
-    tbody 
+            border-left: 1px solid $border-color
+        th:first-child
+            border-left: none
+    .table-body 
         color: $text-primary-color
         border: none !important
-        tr 
-            border-bottom: none !important
-            // border-bottom: 1px solid $border-color
-            td
-                vertical-align: middle
-                border-top: none
+        
+        

@@ -1,7 +1,7 @@
 @import "../../vars.scss"
 .button
     color: $highlight
-    background-color: transparent
+    background-color: white
     background-image: none
     border-color: $highlight
     height: 45px
@@ -19,3 +19,24 @@
         color: $text-secondary-color
         border-color: $text-secondary-color
         width: 100px
+        &:hover
+            background-color: white
+            color: $text-secondary-color
+            border-color: $text-secondary-color
+.hover-none
+    &:hover
+        background-color: white
+        color: $highlight
+        border-color: $highlight
+
+.selected
+    background-color: $highlight
+    color: white
+    border-color: $highlight
+.selected.hover-none
+    &:hover
+        background-color: $highlight
+        color: white
+        border-color: $highlight
+
+    
