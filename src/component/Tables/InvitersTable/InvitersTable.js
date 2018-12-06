@@ -7,14 +7,6 @@ import { InvitersRow } from './InvitersRow'
 export class InvitersTable extends Component {
 
     render(){
-        const exampleRowData = [
-            {
-                _id: 1
-            },
-            {
-                _id: 2
-            }
-        ]
         return(
             <Table id="InvitersTable">
                 <thead className="table-header">

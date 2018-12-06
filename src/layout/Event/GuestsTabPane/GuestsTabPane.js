@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './GuestsTabPane.sass';
 
-import { TabPane, Input, ButtonGroup, Button } from 'reactstrap';
+import { TabPane, Input } from 'reactstrap';
 
 import { AddButton } from '../../../component/Buttons/AddButton';
 import { GuestFilter } from '../../../component/Tables/GuestTable/GuestFilter';

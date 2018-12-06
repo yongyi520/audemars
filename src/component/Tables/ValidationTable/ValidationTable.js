@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './ValidationTable.sass';
-import { Table, Input } from 'reactstrap';
+import { Table } from 'reactstrap';
 
 import { ValidationMainRow } from './ValidationMainRow'
-import { NormalButton } from '../../Buttons/NormalButton';
 import { ValidationSubRow } from './ValidationSubRow';
 
 export class ValidationTable extends Component {

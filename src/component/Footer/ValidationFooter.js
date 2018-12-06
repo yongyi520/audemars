@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './ValidationFooter.sass';
 
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-import { NormalButton } from '../Buttons/NormalButton';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 

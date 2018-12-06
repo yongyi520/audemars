@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Dropdown.sass';
-import classnames from 'classnames';
 
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 

@@ -3,7 +3,7 @@ import './ValidationTabPane.sass';
 
 import { TabPane } from 'reactstrap';
 import { ValidationTable } from '../../../component/Tables/ValidationTable/ValidationTable';
-import { ButtonToolbar, ButtonGroup, Input } from 'reactstrap';
+import { ButtonToolbar, Input } from 'reactstrap';
 import { NormalButton } from '../../../component/Buttons/NormalButton';
 import { FilterButtonGroup } from '../../../component/Buttons/FilterButtonGroup';
 import { ValidationFooter } from '../../../component/Footer/ValidationFooter';

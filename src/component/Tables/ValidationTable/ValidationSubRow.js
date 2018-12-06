@@ -10,7 +10,7 @@ export class ValidationSubRow extends Component {
         const {data} = this.props;
         return (
             <tr className="sub-row flex-row-center justify-content-end">
-                <td className={classnames("row-left flex-row-center", data.new != data.old ? 'change': '')}>
+                <td className={classnames("row-left flex-row-center", data.new !== data.old ? 'change': '')}>
                     <div className="input-row flex-row-center"> 
                         <div className="label flex-row-center">
                             <span className="name">{data.field}:</span>
@@ -32,8 +32,8 @@ export class ValidationSubRow extends Component {
                     </div> 
                 </td>
                 <td className="row-right column-actions flex-row-center">
-                    <NormalButton label="Refuse" className="validation-btn" grey={data.new == data.old}/>
-                    <NormalButton label="Validate" className="validation-btn" grey={data.new == data.old}/>
+                    <NormalButton label="Refuse" className="validation-btn" grey={data.new === data.old}/>
+                    <NormalButton label="Validate" className="validation-btn" grey={data.new === data.old}/>
                 </td>
                 
             </tr>

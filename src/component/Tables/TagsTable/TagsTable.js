@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './TagsTable.sass';
 import { Table } from 'reactstrap';
-
 import { TagsRow } from './TagsRow'
 
 export class TagsTable extends Component {

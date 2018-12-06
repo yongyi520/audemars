@@ -4,7 +4,6 @@ import './GuestTableRow.sass';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faUsers } from '@fortawesome/free-solid-svg-icons'
-import { Input, InputGroup } from 'reactstrap';
 
 import { EditButton } from '../../Buttons/EditButton';
 import { BanButton } from '../../Buttons/BanButton';

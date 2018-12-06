@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ValidationMainRow.sass';
 
-import { Input } from 'reactstrap';
 import { NormalButton } from '../../Buttons/NormalButton';
 
 

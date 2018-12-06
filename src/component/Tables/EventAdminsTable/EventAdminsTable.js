@@ -7,14 +7,6 @@ import { EventAdminsRow } from './EventAdminsRow'
 export class EventAdminsTable extends Component {
 
     render(){
-        const exampleRowData = [
-            {
-                _id: 1
-            },
-            {
-                _id: 2
-            }
-        ]
         return(
             <Table id="EventAdminsTable">
                 <thead className="table-header">
